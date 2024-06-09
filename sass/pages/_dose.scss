@@ -1,0 +1,103 @@
+.dose {
+  margin-top: $space-sub;
+  padding-top: $space-gap;
+  background-color: $color-main;
+
+  &__header {
+    font-size: $text-emphasize;
+    color: $color-text;
+    font-weight: 700;
+    text-align: center;
+
+    span {
+      font-size: calc(#{$text-emphasize + $text-big}/ 2);
+      font-weight: 800;
+      color: $color-main;
+      color: $color-tint;
+    }
+  }
+
+  &__languages {
+    text-align: right;
+    margin-right: $space-small;
+    margin-top: $space-sub;
+    display: flex;
+    gap: $space-mini;
+    justify-content: flex-end;
+
+    &--btn {
+      width: $space-standard;
+      font-size: $text-small;
+      text-transform: uppercase;
+      padding: $space-supersmall 0;
+      border: 2px solid transparent;
+      background-color: $color-grey;
+      color: $color-text;
+      box-shadow: 0 1rem 2rem rgba($color-text, 0.1);
+
+      &--active {
+        color: $color-tint;
+        background-color: $color-shade;
+        box-shadow: 0 0.5rem 1rem rgba($color-text, 0.05);
+      }
+    }
+  }
+
+  &__grid {
+    padding: $space-supersmall $space-supersmall $space-gap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: $space-supersmall;
+    row-gap: $space-sub;
+    align-items: center;
+    background-color: $color-shade;
+
+    &--figure {
+      display: flex;
+      flex-direction: column;
+      gap: $space-mini;
+      text-align: center;
+      justify-content: flex-end;
+      width: 100%;
+      padding: $space-mini 0;
+      // border: 2px solid $color-tint;
+      // box-shadow: 0 1rem 2rem rgba($color-text, 0.1);
+
+      &--img {
+        height: 85px;
+        width: 90%;
+        margin: 0 auto;
+        border: 2px solid $color-tint;
+        border-radius: 9px;
+        overflow: hidden;
+        box-shadow: 0 1rem 2rem rgba($color-text, 0.25);
+        filter: opacity(0.9);
+      }
+
+      &--name {
+        font-size: calc(#{$text-mini + $text-small}/ 2);
+        font-size: $text-mini;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $color-tint;
+      }
+    }
+  }
+
+  &__alert {
+    background-color: $color-shade;
+    margin-top: $space-sub;
+    padding: $space-sub $space-supersmall $space-small;
+
+    &--text {
+      text-align: center;
+      color: $color-tint;
+      text-transform: uppercase;
+      font-size: $text-mini;
+      font-weight: 500;
+      letter-spacing: 2.4px;
+      padding-left: $space-small;
+    }
+  }
+}

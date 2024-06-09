@@ -1,0 +1,8 @@
+.section {
+  transition: all 0.75s;
+
+  &--hidden {
+    opacity: 0;
+    transform: translateY($space-big);
+  }
+}

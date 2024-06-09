@@ -1,0 +1,53 @@
+.footer {
+  padding: $space-margin 0;
+  background-color: $color-main;
+
+  &__header {
+    font-size: $text-big;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-tint;
+    padding-left: $space-small;
+  }
+
+  &__content {
+    margin: $space-sub 0;
+
+    &--list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: $space-small;
+    }
+
+    &--row {
+      display: flex;
+      flex-direction: row;
+      gap: $space-mini;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 $space-mini;
+
+      &--icon {
+        width: $space-standard;
+        font-size: $text-emphasize;
+        color: $color-tint;
+      }
+
+      &--txt {
+        text-align: justify;
+        color: $color-tint;
+        font-size: calc(#{$text-small + $text-mini}/ 2);
+      }
+
+      &--link {
+        color: $color-shade;
+        font-weight: 500;
+      }
+
+      &:last-child {
+        margin-top: $space-sub;
+      }
+    }
+  }
+}
