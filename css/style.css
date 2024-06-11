@@ -35,7 +35,8 @@ body {
     transform: translateY(12.8rem); }
 
 .home__nav {
-  background-color: #f22e3e;
+  background-color: #05a66b;
+  background-color: #162032;
   height: calc(21.2rem/ 2);
   padding: 1.2rem 2.8rem;
   display: flex;
@@ -53,6 +54,8 @@ body {
     font-size: 2rem;
     color: #f5eddf;
     font-weight: 700; }
+    .home__nav--name--red {
+      color: #05a66b; }
   .home__nav--menu--icon {
     color: #f5eddf;
     font-size: 4.8rem;
@@ -85,7 +88,7 @@ body {
       font-size: 4.8rem;
       color: #162032; }
     .home__content--name--red {
-      color: #f22e3e; }
+      color: #05a66b; }
     .home__content--name--blue {
       color: #162032; }
   .home__content--tagline {
@@ -110,7 +113,7 @@ body {
     .home__features--header span {
       font-size: calc(6rem/ 2);
       font-weight: 800;
-      color: #f22e3e; }
+      color: #05a66b; }
   .home__features--list {
     margin-top: 2.8rem;
     display: flex;
@@ -126,7 +129,7 @@ body {
     .home__features--feature--text {
       font-size: 1.6rem; }
       .home__features--feature--text span {
-        color: #f22e3e;
+        color: #05a66b;
         font-weight: 700; }
 
 #home {
@@ -152,12 +155,10 @@ body {
     .home__menu--list--header {
       font-size: 3.6rem;
       color: #162032;
+      color: #f5eddf;
       letter-spacing: 5px;
-      background-color: #f5eddf;
       transform: scale(1.1);
       padding: 0.6rem; }
-      .home__menu--list--header--red {
-        color: #f22e3e; }
     .home__menu--list--link {
       text-decoration: none;
       font-size: 2rem;
@@ -183,7 +184,7 @@ body {
 .dose {
   margin-top: 2.8rem;
   padding-top: 3.6rem;
-  background-color: #f22e3e; }
+  background-color: #05a66b; }
   .dose__header {
     font-size: 2.4rem;
     color: #403b39;
@@ -192,7 +193,7 @@ body {
     .dose__header span {
       font-size: calc(6rem/ 2);
       font-weight: 800;
-      color: #f22e3e;
+      color: #05a66b;
       color: #f5eddf; }
   .dose__languages {
     text-align: right;
@@ -267,7 +268,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(242, 46, 62, 0.95);
+  background-color: rgba(5, 166, 107, 0.95);
   height: 100vh;
   width: 100vw; }
   .info__exit {
@@ -281,7 +282,7 @@ body {
       border: none;
       border-radius: 3px;
       box-shadow: 0 1rem 2rem rgba(64, 59, 57, 0.15);
-      background-color: #f22e3e;
+      background-color: #05a66b;
       color: #f5eddf; }
       .info__exit--icon:hover {
         cursor: pointer; }
@@ -297,7 +298,7 @@ body {
     flex-direction: column;
     gap: 0;
     line-height: 1.6;
-    color: #f22e3e;
+    color: #05a66b;
     text-align: justify; }
     .info__row--title {
       font-size: 1.6rem;
@@ -309,7 +310,7 @@ body {
 
 .footer {
   padding: 5.6rem 0;
-  background-color: #f22e3e; }
+  background-color: #05a66b; }
   .footer__header {
     font-size: 3.6rem;
     font-weight: 700;

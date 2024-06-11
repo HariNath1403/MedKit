@@ -25,14 +25,15 @@
       &--header {
         font-size: $text-big;
         color: $color-shade;
+        color: $color-tint;
         letter-spacing: 5px;
-        background-color: $color-tint;
+        // background-color: $color-tint;
         transform: scale(1.1);
         padding: $space-supersmall;
 
-        &--red {
-          color: $color-main;
-        }
+        // &--red {
+        //   color: $color-main;
+        // }
       }
 
       &--link {

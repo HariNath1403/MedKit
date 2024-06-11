@@ -1,6 +1,8 @@
 import * as info from "./info.js";
 import views from "./views.js";
 
+const nameLogo = "git-merge";
+const paddingRight = "5px";
 let language = "eng";
 
 const changeLanguge = function (lang) {
@@ -55,4 +57,12 @@ const allSections = document.querySelectorAll(".section");
 allSections.forEach((section) => {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
+});
+
+// Adjust Logo
+const brandLogos = document.querySelectorAll(".brand-icon");
+
+brandLogos.forEach((logo) => {
+  logo.setAttribute("name", nameLogo);
+  logo.style.paddingRight = paddingRight;
 });

@@ -1,6 +1,7 @@
 .home {
   &__nav {
     background-color: $color-main;
+    background-color: $color-shade;
     height: calc(#{$space-widegap + $space-big}/ 2);
     padding: $space-mini $space-sub;
     display: flex;
@@ -15,6 +16,7 @@
 
       &--icon {
         color: $color-tint;
+        // color: $color-shade;
         font-size: $text-header-sub;
       }
     }
@@ -23,12 +25,18 @@
       display: flex;
       font-size: $text-standard;
       color: $color-tint;
+      // color: $color-shade;
       font-weight: 700;
+
+      &--red {
+        color: $color-main;
+      }
     }
 
     &--menu {
       &--icon {
         color: $color-tint;
+        // color: $color-shade;
         font-size: $text-header-sub;
         transition: all 0.3s;
 
