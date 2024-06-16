@@ -6,3 +6,18 @@
     transform: translateY($space-big);
   }
 }
+
+.brand-icon {
+  filter: invert(48%) sepia(51%) saturate(500%) hue-rotate(100deg)
+    brightness(90%) contrast(95%);
+
+  &--tint {
+    filter: invert(94%) sepia(5%) saturate(150%) hue-rotate(340deg)
+      brightness(105%) contrast(90%);
+  }
+
+  &--shade {
+    filter: invert(14%) sepia(6%) saturate(688%) hue-rotate(178deg)
+      brightness(85%) contrast(95%);
+  }
+}

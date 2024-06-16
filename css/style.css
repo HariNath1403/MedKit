@@ -34,6 +34,13 @@ body {
     opacity: 0;
     transform: translateY(12.8rem); }
 
+.brand-icon {
+  filter: invert(48%) sepia(51%) saturate(500%) hue-rotate(100deg) brightness(90%) contrast(95%); }
+  .brand-icon--tint {
+    filter: invert(94%) sepia(5%) saturate(150%) hue-rotate(340deg) brightness(105%) contrast(90%); }
+  .brand-icon--shade {
+    filter: invert(14%) sepia(6%) saturate(688%) hue-rotate(178deg) brightness(85%) contrast(95%); }
+
 .home__nav {
   background-color: #05a66b;
   background-color: #162032;
@@ -48,12 +55,15 @@ body {
     align-items: flex-end; }
     .home__nav--logo--icon {
       color: #f5eddf;
-      font-size: 4.8rem; }
+      width: calc(6.4rem* 1.35);
+      height: auto;
+      transform: translateX(-0.6rem); }
   .home__nav--name {
     display: flex;
     font-size: 2rem;
     color: #f5eddf;
-    font-weight: 700; }
+    font-weight: 700;
+    transform: translateY(-50%); }
     .home__nav--name--red {
       color: #05a66b; }
   .home__nav--menu--icon {
@@ -67,25 +77,36 @@ body {
 .home__main--image {
   width: 100%;
   height: calc(38.4rem);
-  background-image: linear-gradient(to top, rgba(245, 237, 223, 0.95), rgba(245, 237, 223, 0) 35%, rgba(245, 237, 223, 0.95)), url("../imgs/home img.jpeg");
-  background-image: url("../imgs/home img.jpeg");
+  background-image: linear-gradient(to top, rgba(245, 237, 223, 0.95), rgba(245, 237, 223, 0) 35%, rgba(245, 237, 223, 0.95)), url("../imgs/product/img--1.jpg");
+  background-image: url("../imgs/product/img--1.jpg");
+  transition: 5s;
+  animation-name: change;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
   background-color: #fff;
-  background-position: center;
+  background-position: left;
   background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  transform: scaleY(0.85) translateY(-10%); }
+  height: 33.3rem; }
 
 .home__content {
-  margin: -3.6rem 0 3.6rem;
+  margin: 1.6rem 0 3.6rem;
   padding: 0.6rem 1.6rem;
   text-align: center; }
   .home__content--name {
     font-size: 3.6rem;
     font-weight: 800;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     .home__content--name--logo {
-      font-size: 4.8rem;
+      transform: translateX(-10%);
+      width: calc(6.4rem* 2);
+      height: auto;
       color: #162032; }
     .home__content--name--red {
       color: #05a66b; }
@@ -132,6 +153,16 @@ body {
         color: #05a66b;
         font-weight: 700; }
 
+@keyframes change {
+  0% {
+    background-image: url("../imgs/product/img--1.jpg"); }
+  33% {
+    background-image: url("../imgs/product/img--2.jpg"); }
+  66% {
+    background-image: url("../imgs/product/img--3.jpg"); }
+  100% {
+    background-image: url("../imgs/product/img--1.jpg"); } }
+
 #home {
   position: relative; }
 
@@ -166,7 +197,8 @@ body {
       font-weight: 500;
       color: #f5eddf; }
     .home__menu--list--icon {
-      font-size: 6.4rem;
+      width: calc(6.4rem* 2.5);
+      height: auto;
       color: #f5eddf; }
   .home__menu--exit {
     position: absolute;

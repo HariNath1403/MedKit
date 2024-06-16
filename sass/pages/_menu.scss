@@ -45,7 +45,8 @@
       }
 
       &--icon {
-        font-size: $text-header-main;
+        width: calc(#{$text-header-main}* 2.5);
+        height: auto;
         color: $color-tint;
       }
     }
